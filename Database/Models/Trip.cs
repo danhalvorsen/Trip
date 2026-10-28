@@ -1,6 +1,8 @@
-﻿namespace Trip.Models
+﻿using Trip.Migrations;
+
+namespace Trip.Models
 {
-    public class Trip
+    public class Trip : AuditableEntity
     {
         public long Id { get; set; }
         public string Destination { get; set; } = null!;

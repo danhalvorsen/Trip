@@ -1,0 +1,6 @@
+<Solution>
+  <Folder Name="/WebAPI/">
+    <Project Path="Database/Database.csproj" Id="56e926d7-39ea-479f-aa5f-bfa0b0b7b02c" />
+    <Project Path="WebAPI/Trip.csproj" />
+  </Folder>
+</Solution>

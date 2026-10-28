@@ -56,11 +56,11 @@ public class MemberController : ControllerBase
         };
 
         _context.Members.Add(member);
-        await _context.SaveChangesAsync();
+        int entityID = await _context.SaveChangesAsync();
 
         var createdMemberDto = new MemberDTO
         {
-            Id = member.Id,
+            Id = entityID,
             UserName = member.UserName,
             DateOfBirth = member.DateOfBirth
         };
